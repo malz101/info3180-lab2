@@ -50,11 +50,13 @@ body {
 
 .profile-stat{
     display: inline-block;
+    padding: 0 1.5rem;
     line-height: 0.5;
 }
 
 .stat{
     color: #000;
+    font-weight: bold;
     /* margin-bottom: 0.5rem; */
 }
 
@@ -62,4 +64,9 @@ body {
     color: #fff;
     background-color:#6a5acd;
     width: 20%;
+}
+
+.btn-follow:hover{
+    background-color:#4530cf;
+    box-shadow: 2px 4px  4px 1px #E2E8F0, -2px 0px 4px 1px #E2E8F0;
 }

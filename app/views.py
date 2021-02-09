@@ -28,16 +28,8 @@ def about():
 @app.route('/profile')
 def profile():
     """Render the website's profile page"""
-    name = "Mary Jane"
-    username = "mjane"
-    location = "Kingston, Jamaica"
     date_joined = date(2019, 2, 7) # a specific date
-    bio = "I talented software developer and electronics engineer with keen interest in telecommunications. Contact me if you would like to work on a new project."
-    profile_stat = {"posts": 20, "following": 1000, "followers": 800}
-
-    return render_template('profile.html',name=name, username=username, location=location,
-                            date=format_date_joined(date_joined),bio=bio, 
-                            prostat=profile_stat)
+    return render_template('profile.html',date=format_date_joined(date_joined))
 
 
 def format_date_joined(date):
